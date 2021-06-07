@@ -18,9 +18,55 @@
 
   <div class="p-col-4">
     <p-card header="titleCase" [subheader]="completeName | titlecase">
-      {{ completeName  }}
+      {{ completeName }}
     </p-card>
   </div>
 
-  <div class="p-col-4">4</div>
+  <!-- <div class="p-col-4">4</div> -->
+</div>
+
+<div class="text-layout">
+  <h1>Date | Fecha | Pipe</h1>
+  <p>Pipe to show dates</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>today</li>
+        <li>today | date</li>
+        <li>today | date: "short"</li>
+        <li>today | date: "long"</li>
+        <li>today | date: "MMMM dd, yyyy"</li>
+        <li>Custom:</li>
+      </ul>
+
+      <hr />
+      <ul>
+        <li>today | date: "long":"GMT-7"</li>
+        <li>today | date: "long":"GMT-4"</li>
+        <li>today | date: "long":"":"fr"</li>
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>{{ today }}</li>
+        <li>{{ today | date }}</li>
+        <li>{{ today | date: "short" }}</li>
+        <li>{{ today | date: "long" }}</li>
+        <li>{{ today | date: "MMMM dd, yyyy" }}</li>
+        <li>{{ today | date: "MMMM" }}</li>
+      </ul>
+      <hr />
+      <ul>
+        <li>{{ today | date: "long":"GMT-7" }}</li>
+        <li>{{ today | date: "long":"GMT-4" }}</li>
+        <li>{{ today | date: "long":"":"fr" }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>

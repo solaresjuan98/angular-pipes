@@ -9,4 +9,6 @@ export class BasicsComponent {
   lowerName: string = 'juan';
   upperName: string = 'JUAN';
   completeName: string = 'juAn sOlAreS';
+  today: Date = new Date(); // today
+
 }
